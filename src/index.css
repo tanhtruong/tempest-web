@@ -116,8 +116,8 @@ body {
 
 /* Global heading defaults */
 h1, h2, h3 {
-  font-weight: 800;
-  letter-spacing: -0.025em;
+  font-weight: 300;
+  letter-spacing: -0.02em;
 }
 
 /* Fade-up entrance animation */

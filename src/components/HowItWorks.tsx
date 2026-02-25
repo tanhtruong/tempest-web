@@ -18,26 +18,26 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="border-t border-primary/15 py-24 px-4 sm:px-6 bg-muted/40">
+    <section id="how-it-works" className="py-40 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
-        <div className="mb-16">
-          <span className="font-mono text-xs tracking-widest text-muted-foreground uppercase">
-            — How it works
+        <div className="mb-20">
+          <span className="text-xs text-muted-foreground tracking-widest uppercase">
+            How it works
           </span>
-          <h2 className="text-3xl sm:text-4xl mt-2">
-            Open. Log. <span className="text-primary">Done.</span>
+          <h2 className="text-3xl sm:text-4xl mt-4">
+            Open. Log. <span className="font-semibold text-primary">Done.</span>
           </h2>
         </div>
 
-        {/* Steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-border">
+        {/* Steps — floating, no borders */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-12 gap-y-16">
           {steps.map((step, i) => (
-            <div key={step.title} className="bg-background p-8 sm:p-10">
-              <span className="font-mono text-[11px] font-medium text-primary bg-primary/10 rounded-full px-2 py-0.5 mb-6 inline-block">
+            <div key={step.title}>
+              <span className="font-mono text-xs text-muted-foreground/50 mb-6 block">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="text-lg mb-3">{step.title}</h3>
+              <h3 className="text-lg font-medium mb-3">{step.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {step.description}
               </p>
